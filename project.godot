@@ -152,7 +152,7 @@ config/icon="res://icon.png"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "godot-next" )
+enabled=PoolStringArray( "TilsetBuilder_Plugin", "godot-next" )
 
 [rendering]
 
