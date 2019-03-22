@@ -1,5 +1,5 @@
 # Godot 3.1 Tileset Builder plugin
-Create 3x3 MINIMAL tileset from image:
+Create 3x3 MINIMAL tileset from images added to list:
 
 
 - Screenshot:
