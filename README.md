@@ -19,3 +19,7 @@ Create 3x3 MINIMAL tileset from images added to list:
 - [-] = Remove selected item from list
 - [C] = Clear list
 - [Export Tileset] = Generate and save tileset to files as resource [tres]
+
+# Base code
+
+- https://github.com/AndyGFX/AGFX_GD3_TilsetBuilder
