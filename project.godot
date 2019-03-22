@@ -99,7 +99,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/godot-next/global/singletons.gd"
 }, {
-"base": "Control",
+"base": "Reference",
 "class": "TilesetBuilder",
 "language": "GDScript",
 "path": "res://addons/TilsetBuilder_Plugin/TilesetBuilder.gd"
@@ -147,7 +147,7 @@ _global_script_class_icons={
 [application]
 
 config/name="AGFX_GD3_TilsetBuilder_Plugin"
-run/main_scene="res://addons/TilsetBuilder_Plugin/TilesetBuilder.tscn"
+run/main_scene="res://addons/TilsetBuilder_Plugin/TilesetBuilderDock.tscn"
 config/icon="res://icon.png"
 
 [editor_plugins]

@@ -1,12 +1,10 @@
 
-extends Control
+
 class_name TilesetBuilder
 
 
 export  var tile_width:int  = 16
 export  var tile_height:int = 16
-export(Array, Texture) var my_textures
-#export(bool, TOOL_BUTTON) var create_foo setget on_create_foo_button_pressed
 
 
 var tiles_input_image:Image = null
