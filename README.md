@@ -10,7 +10,7 @@ Create 3x3 MINIMAL tileset from image:
 
 # Usage:
 
-- Copy folder TilsetBuilder_Plugin to your project inside addnos folder
+- Copy folder TilesetBuilder_Plugin to your project inside addnos folder
 - Open Project setting/Plugins and Activate TilsetBuilder_Plugin
 
 # Help
