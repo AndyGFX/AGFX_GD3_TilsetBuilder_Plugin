@@ -113,4 +113,3 @@ margin_bottom = 276.0
 theme = ExtResource( 2 )
 custom_fonts/font = ExtResource( 4 )
 text = "C"
-
