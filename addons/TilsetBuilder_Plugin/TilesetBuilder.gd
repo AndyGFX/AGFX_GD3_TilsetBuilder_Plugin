@@ -179,11 +179,17 @@ func Build() -> void:
 				# blit subtile to tile
 				self.tileset_image.blit_rect(self.tiles_input_image,src_rect,dst_pos)
 	
-	var auto_tile_atlas_texture:Texture = self.GetResult()
-	auto_tile_atlas_texture.get_data().save_png("res://TileSetSprites/TilesetSprite_"+String(self.tileset_id)+".png");
-
-	tileset_template_3x3M_16x16p.tile_set_texture(self.tileset_id,auto_tile_atlas_texture)
+#	var auto_tile_atlas_texture:Texture = self.GetResult()
+#	auto_tile_atlas_texture.get_data().save_png("res://TileSetSprites/TilesetSprite_"+String(self.tileset_id)+".png");
+#
+#	tileset_template_3x3M_16x16p.tile_set_texture(self.tileset_id,auto_tile_atlas_texture)
 	
+	var spritesheet_resource_path = self.SaveSpriteSheet()
+	print("LOADING: "+spritesheet_resource_path)
+	var res = load(spritesheet_resource_path)
+	tileset_template_3x3M_16x16p.tile_set_texture(self.tileset_id,res)
+	tileset_template_3x3M_16x16p.resource_path = spritesheet_resource_path;
+		
 	pass
 
 
@@ -195,6 +201,18 @@ func GetResult() -> ImageTexture:
 	itex.set_storage(ImageTexture.STORAGE_RAW)
 	itex.create_from_image(self.tileset_image,0)	
 	return itex
+
+#--------------------------------------------------------------------
+# Tilset RESULT
+#--------------------------------------------------------------------
+func SaveSpriteSheet() -> String:
+	var itex = ImageTexture.new()    
+	itex.set_storage(ImageTexture.STORAGE_RAW)
+	itex.create_from_image(self.tileset_image,0)
+	var spritesheet_name = self.tiles_input_image.get_name().replace(".png","_spritesheet.png")
+	var spritesheet_resource_path :String = "res://TileSet_Spritesheet/"+spritesheet_name;
+	itex.get_data().save_png(spritesheet_resource_path);
+	return spritesheet_resource_path 
 	
 #--------------------------------------------------------------------
 # Tileset SAVE

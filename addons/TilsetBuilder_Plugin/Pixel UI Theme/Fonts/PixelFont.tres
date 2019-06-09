@@ -7,4 +7,3 @@ size = 8
 outline_size = 1
 outline_color = Color( 0.180392, 0.215686, 0.25098, 1 )
 font_data = ExtResource( 1 )
-
