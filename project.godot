@@ -24,10 +24,6 @@ config/name="AGFX_GD3_TilsetBuilder_Plugin"
 run/main_scene="res://addons/TilsetBuilder_Plugin/TilesetBuilderDock.tscn"
 config/icon="res://icon.png"
 
-[editor_plugins]
-
-enabled=PoolStringArray( "TilsetBuilder_Plugin" )
-
 [rendering]
 
 environment/default_environment="res://default_env.tres"

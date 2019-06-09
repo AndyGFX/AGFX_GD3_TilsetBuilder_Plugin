@@ -226,6 +226,7 @@ func BuildFromImages(src_images, output_name:String):
 	for img in src_images:
 		var data = src_images[img]
 		self.SetTileSize(data.width,data.height)
+		print("IMG: "+data.src.get_name())
 		self.SetInputImage(data.src)
 		self.tileset_name = data.name
 		self.Prepare()

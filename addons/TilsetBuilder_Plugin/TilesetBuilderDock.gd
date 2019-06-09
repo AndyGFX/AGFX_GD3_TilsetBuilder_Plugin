@@ -67,9 +67,11 @@ func OPEN_PNG_file(path):
 	var src_item:TileItem = TileItem.new()
 	src_item.width = int(get_node("LineEdit_w").text)
 	src_item.height = int(get_node("LineEdit_h").text)
-	src_item.name = filename	
+	src_item.name = filename
+	
 	src_item.src = Image.new()
 	src_item.src = icon.get_data()
+	src_item.src.set_name(filename)
 	
 	src_images[String(id)] = src_item
 	
