@@ -69,10 +69,60 @@ var tilset_template = {
 	
 var bitmask = [ Vector2( 0, 0 ), 511, Vector2( 0, 1 ), 447, Vector2( 0, 2 ), 438, Vector2( 0, 3 ), 219, Vector2( 0, 4 ), 146, Vector2( 0, 5 ), 54, Vector2( 1, 0 ), 510, Vector2( 1, 1 ), 446, Vector2( 1, 2 ), 434, Vector2( 1, 3 ), 155, Vector2( 1, 4 ), 56, Vector2( 1, 5 ), 50, Vector2( 2, 0 ), 507, Vector2( 2, 1 ), 443, Vector2( 2, 2 ), 182, Vector2( 2, 3 ), 218, Vector2( 2, 4 ), 432, Vector2( 2, 5 ), 144, Vector2( 3, 0 ), 506, Vector2( 3, 1 ), 442, Vector2( 3, 2 ), 178, Vector2( 3, 3 ), 154, Vector2( 3, 4 ), 176, Vector2( 3, 5 ), 48, Vector2( 4, 0 ), 255, Vector2( 4, 1 ), 191, Vector2( 4, 2 ), 504, Vector2( 4, 3 ), 63, Vector2( 4, 4 ), 216, Vector2( 4, 5 ), 18, Vector2( 5, 0 ), 254, Vector2( 5, 1 ), 190, Vector2( 5, 2 ), 248, Vector2( 5, 3 ), 62, Vector2( 5, 4 ), 152, Vector2( 5, 5 ), 24, Vector2( 6, 0 ), 251, Vector2( 6, 1 ), 187, Vector2( 6, 2 ), 440, Vector2( 6, 3 ), 59, Vector2( 6, 4 ), 27, Vector2( 6, 5 ), 16, Vector2( 7, 0 ), 250, Vector2( 7, 1 ), 186, Vector2( 7, 2 ), 184, Vector2( 7, 3 ), 58, Vector2( 7, 4 ), 26, Vector2( 7, 5 ), 511 ] 
 
+var tilset_collision = {
+		"0,0" : "none",
+		"1,0" : "none",
+		"2,0" : "none",
+		"3,0" : "none",
+		"4,0" : "none",
+		"5,0" : "none",
+		"6,0" : "none",
+		"7,0" : "none",
+		"0,1" : "none",
+		"1,1" : "none",
+		"2,1" : "none",
+		"3,1" : "none",
+		"4,1" : "none",
+		"5,1" : "none",
+		"6,1" : "none",
+		"7,1" : "none",
+		"0,2" : "none",
+		"1,2" : "none",
+		"2,2" : "none",
+		"3,2" : "none",
+		"4,2" : "none",
+		"5,2" : "none",
+		"6,2" : "none",
+		"7,2" : "none",
+		"0,3" : "none",
+		"1,3" : "none",
+		"2,3" : "none",
+		"3,3" : "none",
+		"4,3" : "none",
+		"5,3" : "none",
+		"6,3" : "none",
+		"7,3" : "none",
+		"0,4" : "none",
+		"1,4" : "none",
+		"2,4" : "none",
+		"3,4" : "none",
+		"4,4" : "none",
+		"5,4" : "none",
+		"6,4" : "none",
+		"7,4" : "none",
+		"0,5" : "none",
+		"1,5" : "none",
+		"2,5" : "none",
+		"3,5" : "none",
+		"4,5" : "none",
+		"5,5" : "none",
+		"6,5" : "none",
+		"7,5" : "none"
+}
 
 func on_create_foo_button_pressed()->bool:
 	return true
-    # do stuff
+	# do stuff
 
 #--------------------------------------------------------------------
 # Set tile size
@@ -203,7 +253,7 @@ func GetResult() -> ImageTexture:
 	return itex
 
 #--------------------------------------------------------------------
-# Tilset RESULT
+# Tilset SAVE SPRITESHEET
 #--------------------------------------------------------------------
 func SaveSpriteSheet() -> String:
 	var itex = ImageTexture.new()    
